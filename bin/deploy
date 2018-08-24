@@ -3,9 +3,10 @@
 # Run this script to deploy the app to Github Pages
 
 # Parse cmd arguments
-
-SRC_BRANCH="master"
-DEPLOY_BRANCH="gh-pages"
+# DEFAULT (Changed to be the same as --user option)
+SRC_BRANCH="source"
+DEPLOY_BRANCH="master"
+REMOTE="edu159"
 
 USAGE_MSG="usage: deploy [-h|--help] [-u|--user] [-s|--src SRC_BRANCH] [-d|--deploy DEPLOY_BRANCH]"
 
@@ -88,7 +89,7 @@ rm -R _site/
 # Push to DEPLOY_BRANCH
 git add -fA
 git commit --allow-empty -m "$(git log -1 --pretty=%B) [ci skip]"
-git push -f -q origin $DEPLOY_BRANCH
+git push -f -q $REMOTE $DEPLOY_BRANCH
 
 # Move back to SRC_BRANCH
 git checkout $SRC_BRANCH
