@@ -36,6 +36,7 @@ blog_description: a simple whitespace theme for academics
 # Tags
 tag_page_layout: tag_page
 tag_page_dir: tag
+tag_permalink_style: pretty
 
 # Pagination
 paginate: 4

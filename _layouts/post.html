@@ -5,7 +5,7 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.tags != empty %} | <b>{{ page | tags }}</b>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.tags != empty %} | <b>{{ page | tag_cloud }}</b>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     <p class="post-meta"> 
         <i class="fas fa-comments"></i>
         <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{ page.id }}">0 Comments</a>

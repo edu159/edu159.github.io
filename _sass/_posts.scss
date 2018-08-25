@@ -1,6 +1,19 @@
 .post-header {
     margin-bottom: $vertical-spacing-unit;
 }
+
+a[class^='set-'] {
+		display: inline-block;
+		padding: 0px 3px;
+		// margin: 0 8px 4px 0;
+		font-size: 11px;
+		line-height: 19px;
+		color: $green-1;
+		background-color: #f2f2f2;
+		text-decoration: none;
+		transition: .4s;
+}
+
 .post-list {
     margin: 0;
     padding: 0;
