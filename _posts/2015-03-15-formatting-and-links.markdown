@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  a post with formatting and links
+title:  A post with formatting and links
 date:   2015-03-15 16:40:16
 tags: [CUDA, IBM, Machine-Learning, simulation, Physics, numerical-analysis, CFD, Molecular-Dynamics]
 description: march & april, looking forward to summer

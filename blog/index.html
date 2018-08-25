@@ -12,13 +12,13 @@ layout: default
   {% for post in paginator.posts %}
     <li>
       <h2><a class="post-title" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
-      <p class="post-meta">{{ post.date | date: '%B %-d, %Y — %H:%M' }} {% if post.tags != empty %} | <b>{{ post | tag_cloud }}</b>{% endif %}</p>
+      <p class="post-meta"> <em style="font-weight: normal"> {{ post.date | date: '%B %-d, %Y — %H:%M' }}</em> {% if post.tags != empty %} | <b>{{ post | tag_cloud }}</b>{% endif %}</p>
       <p></p>
       {{ post.excerpt | strip_html }}
       <p></p>
       <div style="float:right">
           <i class="fas fa-comments"></i>
-          <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{post.id}}">0 Comments</a>
+          <a class="comment-count" href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{post.id}}">0 Comments</a>
           &nbsp
           <i class="fas fa-book"></i>
           <a href="{{ post.url | prepend: site.baseurl }}">Read</a>

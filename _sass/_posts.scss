@@ -5,6 +5,7 @@
 a[class^='set-'] {
 		display: inline-block;
 		padding: 0px 3px;
+        font-weight: bold;
 		// margin: 0 8px 4px 0;
 		font-size: 11px;
 		line-height: 19px;
@@ -12,6 +13,10 @@ a[class^='set-'] {
 		background-color: #f2f2f2;
 		text-decoration: none;
 		transition: .4s;
+}
+
+.comment-count {
+    color: $blue-1;
 }
 
 .post-list {
@@ -25,9 +30,18 @@ a[class^='set-'] {
         padding-top: $space-3;
     }
 }
+
+.post-comment-title {
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 80px;
+}
 .post-title {
     font-size: 30px;
-    // font-weight: bold;
+    font-weight: normal;
     letter-spacing: -1px;
     line-height: 1;
     margin-bottom: 10px;
