@@ -17,10 +17,10 @@ layout: default
       {{ post.excerpt | strip_html }}
       <p></p>
       <div style="float:right">
-          <i class="fab fa-comments"></i>
-          <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread">0 Comments</a>
+          <i class="fas fa-comments"></i>
+          <a href="{{ post.url | prepend: site.baseurl }}#disqus_thread" data-disqus-identifier="{{post.id}}">0 Comments</a>
           &nbsp
-          <i class="fab fa-book"></i>
+          <i class="fas fa-book"></i>
           <a href="{{ post.url | prepend: site.baseurl }}">Read</a>
       </div>
     </li>
