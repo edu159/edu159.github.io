@@ -1,0 +1,4 @@
+1) 'main' branch is for deploying, 'source' branch for code
+2) 'origin' remote kept pointing to original author's repo. 'edu159' is my remote.
+3) ./bin/deploy automatically deploy. 'source' branch has to be pushed manually
+

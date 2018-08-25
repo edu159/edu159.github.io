@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-name: Eduardo Ramos-Fernandez
+name: Eduardo Ramos-Fernández
 email: eduardo.rf159@gmail.com
 description: > # this means to ignore newlines until "url:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
@@ -17,9 +17,9 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: # your GitHub user name
+github_username: edu159 # your GitHub user name
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: eduardo-ramos-fernández-39059a8a # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 contact_note: >
@@ -33,6 +33,10 @@ google_analytics: UA-XXXXXXXXX # out your google-analytics code
 blog_name: Eduardo's blog
 blog_description: a simple whitespace theme for academics
 
+# Tags
+tag_page_layout: tag_page
+tag_page_dir: tag
+
 # Pagination
 paginate: 4
 permalink: /blog/:year/:title/
@@ -44,7 +48,7 @@ text:
     older: 'Older'
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+disqus_shortname: edu159 # put your disqus shortname
 
 # Optional features
 show_social_icons:  false

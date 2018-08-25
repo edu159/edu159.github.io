@@ -5,19 +5,30 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.tags != empty %} | <b>{{ page | tags }}</b>{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+    <p class="post-meta"> 
+        <i class="fab fa-comments"></i>
+        <a href="{{ page.url | prepend: site.baseurl }}#disqus_thread">0 Comments</a>
+    </p>
   </header>
 
   <article class="post-content">
     {{ content }}
   </article>
 
-  {% if site.disqus_shortname and page.comments %}
+  <p class="post-section"> Comments </p>
+
+  {% if site.disqus_shortname %}
     <div id="disqus_thread"></div>
     <script type="text/javascript">
       var disqus_shortname  = '{{ site.disqus_shortname }}';
       var disqus_identifier = '{{ page.id }}';
       var disqus_title      = {{ page.title | jsonify }};
+      var disqus_config = function () {
+          this.page.url = "{{ page.url | prepend: site.baseurl }}"; // <--- use canonical URL
+          // this.page.url = "http://localhost:4000{{ page.url | prepend: site.baseurl }}"; // <--- use canonical URL
+          this.page.identifier = "{{ page.id }}";
+      };
       (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';

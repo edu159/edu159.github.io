@@ -13,7 +13,8 @@
     }
 }
 .post-title {
-    font-size: 42px;
+    font-size: 30px;
+    // font-weight: bold;
     letter-spacing: -1px;
     line-height: 1;
     margin-bottom: 10px;
@@ -22,6 +23,13 @@
     //     font-size: 36px;
     // }
 }
+
+.post-section {
+    font-size: 25px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
 .post-content {
     h2 {
         font-size: 42px;
