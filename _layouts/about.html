@@ -4,6 +4,7 @@ layout: page
 
 {% if page.profile %}
   <div class="profile col one {{ page.profile.align }}">
+
     {% if page.profile.image %}
       <img class="one" src="{{ page.profile.image | prepend: '/assets/img/' | prepend: site.baseurl | prepend: site.url }}">
     {% endif %}
@@ -17,7 +18,9 @@ layout: page
             {% if site.linkedin_username %}<a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>{% endif %}
             {% if site.twitter_username %}<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>{% endif %}
             {% if site.strava_userid %}<a  href="https://www.strava.com/athletes/{{ site.strava_userid }}" target="_blank" title="Strava"><i class="fab fa-strava"></i></a>{% endif %}
-                <!-- {{ page.profile.address }} -->
+      </span>
+      <span class="contacticon right">
+            <a style="font-weight: normal" class="right" href="" title="CV">CV</a>
       </span>
     </div>
     {% endif %}
