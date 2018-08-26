@@ -7,6 +7,7 @@ description: A growing collection of your cool projects.
 
 {% for project in site.projects %}
 
+{% if project.publish %}
 {% if project.redirect %}
 <div class="project">
     <div class="thumbnail">
@@ -43,6 +44,7 @@ description: A growing collection of your cool projects.
     </div>
 </div>
 
+{% endif %}
 {% endif %}
 
 {% endfor %}
